@@ -13,7 +13,7 @@ echo "GIT: $GIT"
 
 echo "1. Clone the Subversion repository using git-svn"
 rm -rf $TEMP
-git svn clone $SVN --no-metadata -A $AUTHORS --stdlayout $TEMP
+git svn clone $SVN --preserve-empty-dirs --no-metadata -A $AUTHORS --stdlayout $TEMP
 
 echo "2. Clean up remote absent branches"
 cd $TEMP
