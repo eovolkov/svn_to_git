@@ -31,7 +31,6 @@ We have several predefined variables:
 - AUTHORS - path to config file which contains predefined matching with svn and git authors   
 - SVN - URL to svn repository
 - GIT - URL ti git repository
-- HEAD_BRANCH - default branch for git repo
 
 ### Preparation
 1\. We should already have installed svn and git.
@@ -58,7 +57,6 @@ TEMP=[path to temp folder]
 AUTHORS=[path to file authors-transform.txt]
 SVN=[URL to svn repo like "https://example.com/svn/repo_name"]
 GIT=[URL to git repo like "https://example.com/repo/path/name.git"]
-HEAD_BRANCH="[default branch name]"
 ```
 
 2\. Clone the Subversion repository using git-svn
@@ -67,15 +65,13 @@ HEAD_BRANCH="[default branch name]"
 
 4\. Create tags and clean up branches under /tags/ path
 
-5\. Create local branches from remote
+5\. Setup push for remote
 
-6\. Remote predefined origin and add new one. Remote branches will be removed automatically.
+6\. Update predefined origin
 
-7\. Set head branch
+7\. Publish to Git repository branches and tags
 
-8\. Publish to Git repository branches and tags
-
-9\. Clean up temp folder
+8\. Clean up temp folder
 
 ### Launch script
 Script developed to launch with bash.
